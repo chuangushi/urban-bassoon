@@ -1,15 +1,17 @@
 import json
-
-
 import requests
-
 import re
+import sys
+from imp import reload
+if sys.getdefaultencoding() != 'utf-8':
+    reload(sys)
+    sys.setdefaultencoding('utf-8')
+'''
 import urllib3
-
 requests.packages.urllib3.disable_warnings()
 from urllib3.exceptions import InsecureRequestWarning
 urllib3.disable_warnings(InsecureRequestWarning)
-
+'''
 pro={
     "http":"http://127.0.0.1:8888",
      "https":"http://127.0.0.1:8888"
